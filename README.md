@@ -1,12 +1,18 @@
 # Ollama-setup
-Steps to execute the gemma4:e4b in a docker container
+Steps to execute the gemma4:e4b in a docker container:
 kishore-john@kishore-john-HP-Pavilion-Laptop-15-eg2xxx:~$ docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+
 kishore-john@kishore-john-HP-Pavilion-Laptop-15-eg2xxx:~$ docker start ollama
 ollama
+
+
 kishore-john@kishore-john-HP-Pavilion-Laptop-15-eg2xxx:~$ docker ps
 CONTAINER ID   IMAGE           COMMAND               CREATED       STATUS         PORTS                                             NAMES
 9fb07d9d1a49   ollama/ollama   "/bin/ollama serve"   2 weeks ago   Up 3 seconds   0.0.0.0:11434->11434/tcp, [::]:11434->11434/tcp   ollama
+
+
 kishore-john@kishore-john-HP-Pavilion-Laptop-15-eg2xxx:~$ docker exec -it ollama ollama run gemma4:e4b
 >>> hi
 Hi! How can I help you today? 😊
